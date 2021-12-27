@@ -18,4 +18,27 @@ employee = [
   [3, 'Jill'],
 ]
 
-console.log('ID: ', id)
+// Union
+let pid: string | number
+
+pid = 22
+
+pid = 'hello'
+
+// Enum
+enum Direction1 {
+  Up = 1,
+  Down,
+  Left,
+  Right,
+}
+
+enum Direction2 {
+  Up = 'Up',
+  Down = 'Down',
+  Left = 'Left',
+  Right = 'Right',
+}
+
+console.log('Direction1', Direction1)
+console.log('Direction2', Direction2)
