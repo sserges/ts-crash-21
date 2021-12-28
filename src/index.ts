@@ -57,4 +57,14 @@ let cid: any = 1
 
 let customerId = cid as number
 
-console.log('customerId', customerId)
+// Functions
+const addNum = (x: number, y: number): number => {
+  return x + y
+}
+
+// Void
+function log(message: string | number): void {
+  console.log(message)
+}
+
+log('rrrrr')
