@@ -89,8 +89,14 @@ const sub: MathFunc = (x: number, y: number): number => x - y
 type Point = number | string
 const p1: Point = 1
 
+interface PersonInterface {
+  id: number
+  name: string
+  register(): string
+}
+
 // Classes
-class Person {
+class Person implements PersonInterface {
   public id: number
   public name: string
 
