@@ -91,14 +91,20 @@ const p1: Point = 1
 
 // Classes
 class Person {
-  id: number
-  name: string
+  public id: number
+  public name: string
 
   constructor(id: number, name: string) {
     this.id = id
     this.name = name
   }
+
+  register() {
+    return `${this.name} is now registered`
+  }
 }
 
 const peter = new Person(1, 'Peter Parker')
 const mike = new Person(2, 'Mike Jordan')
+
+console.log(peter.register())
